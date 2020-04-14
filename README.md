@@ -1,1 +1,2 @@
-# Module-3-Lab-Exercises
+# Module3Lab
+In all questions where database required, we used Postman.
