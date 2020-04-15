@@ -23,7 +23,7 @@ public class ProductRepo implements ProductRepoInterface {
 
 	@Override
 	public List<Product> reterive() {
-		String Qstr = "SELECT book FROM Book book";
+		String Qstr = "SELECT product FROM PRODUCT product";
 		TypedQuery<Product> query = em.createQuery(Qstr, Product.class);
 		return query.getResultList();
 	}

@@ -40,7 +40,7 @@ public class MyController {
 	public ResponseEntity<Boolean> delProduct(@PathVariable("id") int id) {
 		
 		Boolean status = myService.delete(id);
-		if(!status)throw new ProductException("Product not found.");    
+		if(!status)throw new ProductException("Product not found.");   //Id is auto generated so I apply at the time of deletion if Id found delete otherwise throw exception  
 		return new ResponseEntity<Boolean>(status, HttpStatus.OK);
 	}
 	
